@@ -1,0 +1,362 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0, 0, 0, 0.8);
+	position: sticky;
+	top: 0;
+}
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: rgb(211, 57, 1);
+	padding: 8px 25px;
+	transition: all .10s ease;
+}
+.navbar ul li a:hover {
+	background-color: rgb(255, 206, 188);
+	color: black;
+	box-shadow: 0 0 20px orangered ;
+}
+
+
+#home{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.9) ;
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+	color: rgb(211, 57, 1);
+}
+#home h1{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 4rem;
+	font-family: 'Luckiest Guy';
+	color: orangered;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow:   0px -2px 0 #212121,  
+				   0px -2px 0 #212121,
+				   0px  2px 0 #212121,
+				   0px  2px 0 #212121,
+				  -2px  0px 0 #212121,  
+				   2px  0px 0 #212121,
+				  -2px  0px 0 #212121,
+				   2px  0px 0 #212121,
+				  -2px -2px 0 #212121,  
+				   2px -2px 0 #212121,
+				  -2px  2px 0 #212121,
+				   2px  2px 0 #212121,
+				  -2px  4px 0 #212121,
+				   0px  4px 0 #212121,
+				   2px  4px 0 #212121,
+				   0 4px 1px rgba(0,0,0,.1),
+				   0 0 2px rgba(0,0,0,.1),
+				   0 2px 3px rgba(0,0,0,.3),
+				   0 8px 2px rgba(0,0,0,.2),
+				   0 8px 8px rgba(0,0,0,.25),
+				   0 10px 10px rgba(0,0,0,.2),
+				   0 10px 10px rgba(0,0,0,.15);
+  }
+ #home::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url("images/background2.jpg") no-repeat center center/cover;
+	height: 900px;
+	width: 100%;
+	z-index: -1;
+	opacity: .8; 
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	/* border: 1px white solid; */
+	align-items: center;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+.headings{
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+	text-align: center;
+	margin: 40px 0px;
+}
+.btn{
+	padding: 10px 35px;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.9);
+	color: orangered;
+	outline: none;
+	transition: .6s ease;
+	border-radius: 2px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.btn:hover{
+	cursor: pointer;
+	background-color: rgb(255, 206, 188);
+	color: black;
+	box-shadow: 0 0 orangered, 0 0 10px orangered, 0 0 15px orangered;
+	font-weight: bold;
+}
+
+
+#about{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 1px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: whitesmoke;
+}
+#about h1{
+	color: orangered;
+	border-bottom: orangered 2px solid;
+}
+#pic{
+	display: flex;
+}
+
+#pic img{
+	width: 575px;
+	height: 400px;
+}
+#intro{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding:30px 30px 30px 40px;
+}
+#intro h2{
+	font-size: 2rem;
+	margin-bottom: 30px;
+}
+
+
+#projects{
+	display: flex;
+	flex-direction: column;
+	background-color:rgba(0, 0, 0, 0.5);
+	color: white;
+	align-items: center;
+	padding: 20px;
+}
+
+#projects h1{
+	color: orangered;
+	border-bottom: orangered 2px solid;
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+.gallery img {
+	width: 360px;
+	height: 240px;
+	margin: 10px;
+}
+
+
+#services{
+	display: flex;
+	flex-direction: column;
+	color: orangered;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 450px;
+	margin: 10px;
+	align-items: center;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0.4) ;
+	background-size: 100% 200%;
+	transition: all .5s;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.box:hover{
+	background: linear-gradient(to top, orangered 50%, white 50%);
+	background-size: 100% 200%;
+	transition: all .5s;
+	background-position: left bottom;
+	color: white;
+	border: none;
+	box-shadow: 0 0 20px orangered;
+}
+.para{
+	padding: 0 10px 0;
+}
+#services h1{
+    border-bottom: 2px solid orangered;
+}
+#services h1:hover{
+	border-bottom: 2px solid white;
+} 
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	margin: 20px 0px;
+}
+.input{
+	padding: 12px;
+	margin: 15px;
+	width: 30%;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+#msg{
+	width: 20%;
+	padding: 10px;
+	margin: 15px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+#send{
+    height: 20px;
+	width: 5%;
+	margin: 40px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+#send:hover{
+	cursor: pointer;
+	box-shadow: 0 0 10px orangered;
+	border-radius: 5px;
+}
+h2{
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	justify-content: center;
+	margin: 20px 0px; 
+}
+aside{
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	justify-content: center;
+	margin: 20px 0px;
+}
+.socials{
+	align-content: space-between;
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+	border-radius: 2px;
+}
+ @media screen and (max-width:800px) {
+	.navbar ul{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.headings{
+		font-size: 2.5rem;
+	}
+	
+	#pic{
+		flex-direction: column;
+		align-items: center;
+	} 
+	#pic img{
+		width: 475px;
+		height: 300px;
+	}
+	#intro h2{
+		text-align: center;
+		padding: 10pxs;
+	}
+	.input{
+		width: 60%;
+	}
+	#msg{
+		width: 55%;
+	}
+	#send{
+		width: 20%;
+	}
+ }
+
+ @media screen and (max-width:530px){
+	 #home{
+		 height: 820px;
+	 }
+	 .headings{
+		 font-size: 1.7rem;
+	 }
+
+	 #pic img{
+		 width: 300px;
+		 height: 175px;
+	 }
+	 #intro h2{
+		 font-size: 1.5rem;
+	 }
+	 .gallery img{
+		 width: 250px;
+		 height: 150px;
+		 margin: 10px;
+	 }
+	 .input{
+		 width: 80%;
+	 }
+	 #msg{
+		 width: 70%;
+	 }
+	 #send{
+		 width: 20%;
+	 }
+ }
