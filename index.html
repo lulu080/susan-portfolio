@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">HEY!<br>I AM LULU.</h1>
+            <button class="btn">
+                Hire Me
+            </button>
+        </div>
+    </section>
+  
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="pic">
+            <img src="images/lulu.jpg" alt="">
+            <div id="intro">
+                <h2>NWAGWU OLUCHI SUSAN</h2>
+                <p>Hello,there!
+                   <br>
+                  I am Nwagwu Oluchi Susan, A web developer and Creative writer as well, I have always been interested in technology,
+                  after getting admission into the university I began my career. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus consequuntur harum consequatur rerum optio maxime cum sequi ratione id, voluptatibus, earum rem labore culpa possimus hic sed veniam. Nisi, nostrum.
+                  Voluptates, veniam earum laudantium distinctio dolor laborum nulla cupiditate labore quibusdam accusantium aperiam assumenda vel quod voluptas dolores quisquam ex similique provident. Optio reiciendis dolorem blanditiis quasi, animi dolores facere.
+                  Cumque velit eligendi sequi, necessitatibus dolorem ipsum, sit animi placeat, architecto nemo quasi exercitationem. At, earum quae exercitationem consectetur omnis dicta ad dolorum quam, dolore error consequatur praesentium quasi atque.
+                  Dolor repellendus cupiditate quaerat dolores quasi quam beatae facere corrupti, labore sint nemo eligendi asperiores ad culpa consequuntur, soluta mollitia tempore provident eaque fugit vero. Placeat ipsa soluta veniam nam.
+                  Itaque autem mollitia vel esse quas fuga enim nihil ullam voluptatibus tempore tempora nemo error dolorem architecto, aliquid laboriosam voluptatum eos similique quos. Nobis, architecto ut? Cum iure eos autem.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+            <h1 class="headings">PROJECTS</h1>
+            <div class="gallery">
+                <img src="images/pic1.jpg" alt="">
+                <img src="images/pic2.jpg" alt="">
+                <img src="images/pic3.jpg" alt="">
+                <img src="images/pic4.jpg" alt="">
+                <img src="images/pic5.jpg" alt="">
+                <img src="images/pic6.jpg" alt="">
+                <img src="images/pic2.jpg" alt="">
+                <img src="images/pic4.jpg" alt="">
+                <img src="images/pic2.jpg" alt="">
+                <img src="images/pic3.jpg" alt="">
+            </div>
+        </section>
+
+    <section id="services">
+      <h1 class="headings">SERVICES</h1>
+      <div class="row">
+          <div class="box">
+              <h1 class="headings">WEB<br> DEVELOPMENT</h1>
+              <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius modi dolorum ex voluptatibus ea doloribus, voluptatum tenetur, a eaque explicabo molestias velit dolorem, excepturi rerum odio cumque inventore exercitationem.
+              Natus et saepe, quam voluptas iure, distinctio consequuntur cupiditate maxime, similique quia voluptatibus a dolore quasi ipsam architecto qui nulla nostrum pariatur repellendus? Provident nisi eius ad officia! Tempora, veritatis!</p>
+          </div>
+          <div class="box">
+            <h1 class="headings">CREATIVE WRITING</h1>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius modi dolorum ex voluptatibus ea doloribus, voluptatum tenetur, a eaque explicabo molestias velit dolorem, excepturi rerum odio cumque inventore exercitationem.
+            Natus et saepe, quam voluptas iure, distinctio consequuntur cupiditate maxime, similique quia voluptatibus a dolore quasi ipsam architecto qui nulla nostrum pariatur repellendus? Provident nisi eius ad officia! Tempora, veritatis!</p>
+        </div>
+        <div class="box">
+            <h1 class="headings">DIGITAL MARKETING</h1>
+            <p class="para" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius modi dolorum ex voluptatibus ea doloribus, voluptatum tenetur, a eaque explicabo molestias velit dolorem, excepturi rerum odio cumque inventore exercitationem.
+            Natus et saepe, quam voluptas iure, distinctio consequuntur cupiditate maxime, similique quia voluptatibus a dolore quasi ipsam architecto qui nulla nostrum pariatur repellendus? Provident nisi eius ad officia! Tempora, veritatis!</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+        <h1 class="headings">CONTACT ME</h1>
+        <h2>Social Media</h2>
+        <aside>
+            <a href="#instagram"><img src ="images/facebook.png" class="socials"></a>
+            <a href="#facebook"><img src="images/instagram.png" class="socials"></a>
+            <a href="#pinterest"><img src ="images/pinterest.png" class="socials"></a>
+        </aside>
+        <form action="get" class="form">
+            <input type="text" name="name" class="input" placeholder="Your Name">
+            <input type="email" name="email"  class="input" placeholder="Your Email">
+            <textarea name="message" id="msg" cols="10" rows="5" placeholder="Your message"></textarea>
+            <input type="submit" value="send" id="send">
+        </form>
+    </section>
+</body>
+</html>
